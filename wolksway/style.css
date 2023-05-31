@@ -19,7 +19,7 @@ header{
     align-items: center;
     border-bottom: 3px solid var(--amarelo);
 }
-header img{
+.logo img{
     width: 150px;
     height: 108px;
 }
@@ -84,6 +84,7 @@ header img{
     margin-top: 70px;
 
  }
+
 .escuro_claro_h2  {
     display: inline;
     background-image: linear-gradient(90deg, #12264B 0%, #12264B 44.17%, #00B0FF 48.44%, #00B0FF 100%, #00B0FF 100%);
@@ -92,6 +93,8 @@ header img{
     background-clip: text;
     font-size: 30px;
     text-transform: uppercase;
+    position: relative;
+    left: 40%;
 }
 
 
@@ -285,4 +288,50 @@ header img{
 footer{
     background-color: var(--azulE);
     height: 200px;
+    color: #eeeff2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+footer .logo{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    font-size: 16px;
+
+}
+footer .logo > p{
+    font-size: 12px;
+    padding: 3px 0 0 0;
+}
+.rodape{
+    text-transform: capitalize;
+    width: 150px;
+}
+.logo > span{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--branco);
+}
+.logo > img {
+    position: relative;
+    left: -45px;
+}
+li{
+    list-style-type: none;
+    padding: 5px 0;
+    font-size: 14px;
+}
+.redes_sociais{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+.redes_sociais img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30%;
 }
