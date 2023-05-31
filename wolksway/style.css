@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --azulE: #12264B;
+    --branco: #ffffff;
+    --amarelo: #FFD100;
+    --azulc: #195F8C;
+    --azulclaro: #00B1EB;
+}
+header{
+    background-color: var(--azulE);
+    height: 113px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid var(--amarelo);
+}
+header img{
+    width: 150px;
+    height: 108px;
+}
+.header_links {
+    width:600px ;
+    display: flex;
+    justify-content: space-around;
+}
+.header_links a{
+    color: var(--branco);
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.produtos_servicos{
+    background-image: url("./img/banner_meteor_naestrada.png");
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 113px);
+    display: flex;
+}
+.escurecer{
+    background: linear-gradient(96.44deg, rgba(18, 38, 75, 0.64) 0%, rgba(18, 38, 75, 0.64) 96.88%);
+    width: 100vw;
+    height: calc(100vh - 113px);
+    display: flex;
+
+}
+.banner_principal_ps{
+    
+    color: var(--branco);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 500px;
+    margin: 100px 122px ;
+}
+.banner_principal_ps h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.banner_principal_ps p{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.ver_mais {
+    color: var(--azulE);
+    background-color: var(--amarelo);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 235px;
+    text-align: center;
+    margin-left: 60px;
+    filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.25));
+}
+/* --------------- OFERTAS ESPECIAIS ---------- */
+.ofertas_especiais{
+    margin-top: 70px;
+
+ }
+.escuro_claro_h2  {
+    display: inline;
+    background-image: linear-gradient(90deg, #12264B 0%, #12264B 44.17%, #00B0FF 48.44%, #00B0FF 100%, #00B0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+.cards{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card {
+  /*   height: 440px; */
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.card_azul{
+    background-color: var(--azulc);
+    width: 25vw;
+    height: 193px;
+    display: flex;
+    text-align: justify;
+    padding: 30px;
+    flex-direction: column;
+    color: var(--branco);
+    border-radius: 10px 10px 0 0 ;
+    font-size: 20px;
+   
+}
+.card_azul span{
+    font-weight: bold;
+}
+.card_branco img{
+    width: 15.4vw;
+   
+}
+.card_branco{
+    height: 293px;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    top: -50px;
+    
+}
+.card_branco a{
+    color: var(--branco);
+    background-color: var(--azulclaro);
+    padding: 10px 20px ;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 235px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.25));
+}
+.card_branco span{
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px 0 0 5px;
+    color: var(--azulE);
+
+}
+.card_branco .parcela{
+    padding-top: 0;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.card_branco p{
+    padding: 10px;
+    font-size: 14px;
+}
+.maior_menor{
+    font-size: 50px;
+    font-weight: bolder;
+    margin: auto;
+}
+
+/* --------------- PROMOCOES --------- */
+.promocao{
+    background-color: var(--azulE);
+    color: var(--branco);
+    margin-top: 70px;
+
+}
+.chamariz{
+    text-align: center;
+    margin: 30px 0 60px 0;
+    padding-top: 20px;
+}
+.chamariz h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--amarelo);
+    text-transform: capitalize;
+    padding: 30px;
+}
+.chamariz p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.pneus{
+    display: flex;
+    justify-content: space-around;
+
+}
+.pneu img{
+    width: 217px;
+    height: 158px;
+}
+.info_pneu{
+    position: relative;
+    top: -20px;
+    background-color: #252936;
+    width: 217px;
+    border-radius: 20px 20px ;
+    padding: 0 10px 10px 20px; 
+}
+.tamanho_pneu{
+    font-size: 16px;
+}
+.info_pneu > div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.info_pneu > span{
+    color: var(--amarelo);
+}
+.info_pneu .btn{
+    background: #ECEFF1;
+    border-radius: 20px;
+    color: #000000;
+    padding: 3px 5px  3px;
+
+}
+.seta {
+    width: 48px;
+    height: 48px;
+    margin: auto 0;
+}
+
+/* ------------------noticias recentes-------- */
+.noticias_recentes{
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+.not_rec{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.nr_card > img {
+    width: 100%;
+    height: 40%;
+}
+.nr_card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 400px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    
+}
+.nr_card > span {
+    font-weight: bold;
+
+}
+.nr_card > p{
+    font-size: 14px;
+    width: 90%;
+}
+.nr_card .ver_mais {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* ------footer---------- */
+footer{
+    background-color: var(--azulE);
+    height: 200px;
+}
